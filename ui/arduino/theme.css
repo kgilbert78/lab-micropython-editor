@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
 
 :root {
   --teal: #008184;
+  --dark-teal: #015b5d;
+  --gray-teal: #91cdce;
   --light-teal: #ecf1f1;
   --white: rgb(255, 255, 255);
   --white-faded: rgba(255, 255, 255, 0.8);
@@ -12,7 +14,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
 body {
@@ -20,7 +22,7 @@ body {
   height: 100vh;
   overflow: hidden;
   position: relative;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -137,7 +139,8 @@ img {
   background: var(--white);
   padding: 2rem;
   font-size: 1.25rem;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
 #dialog ul li {
   padding: 0.5rem;
@@ -152,7 +155,7 @@ img {
 /* EDITOR */
 #editor {
   height: 100%;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   line-height: 1.5em;
 }
 
@@ -162,7 +165,7 @@ img {
   flex-direction: row;
   align-items: center;
   font-size: 1rem;
-  background: var(--color-4);
+  background: var(--dark-teal);
 }
 .editor-filename img {
   max-height: 100%;
@@ -171,6 +174,7 @@ img {
 .editor-filename input {
   width: 100%;
   border: none;
+  background: var(--gray-teal);
 }
 
 /* PANEL */
